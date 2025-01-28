@@ -1,7 +1,7 @@
 version: 1.0
-runtime: python3.9  # Change as per your application (e.g., nodejs18, go1, etc.)
+runtime: python3.9  # Change if necessary
 build:
   commands:
-    - pip install -r requirements.txt  # Change as per your project
+    - pip install -r requirements.txt
 run:
-  command: gunicorn -w 4 -b 0.0.0.0:8000 app:app  # Modify for your framework
+  command: gunicorn -w 4 -b 0.0.0.0:8000 app:app
